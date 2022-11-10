@@ -18,3 +18,62 @@ body {
 .row{
     max-width: 1024px;
 }
+
+body, p, a, li{
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+}
+
+a{
+  color: #219e9a;
+}
+
+h2, h3{
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  color: #313131;
+}
+
+h2{
+  font-size: 28px;
+}
+h3{
+  font-size: 24px;
+}
+h4{
+  margin-bottom: 12px;
+  font-size: 22px;
+  line-height: 40px;
+  color: rgba(#313131, 0.7);
+}
+
+p:not(.author){
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+p.author{
+  margin-bottom: 10px;
+  letter-spacing: -1px;
+  font-weight: 400;
+  color: rgba(#313131, 0.5);
+}
+
+/*BOTAO*/
+a.button {
+  margin-bottom: 0;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 3px;
+  background-color: rgba(#313131, 0.5);
+}
+
+/*HEADER*/
+.page-header{
+  position: relative;
+}
