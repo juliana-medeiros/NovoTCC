@@ -1,79 +1,130 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
-@import url('https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css');
-
-html,
-body,
-.main,
-.main-container {
-  height: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
 }
 
-body {
-    font-family: Poppins;
-    color: #000;
-    background: lightgray;
+nav{
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.row{
-    max-width: 1024px;
+nav .logo{
+  width: 60px;
 }
 
-body, p, a, li{
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 15px;
+nav ul{
+  list-style: none;
+  display: flex;
 }
 
-a{
-  color: #219e9a;
+nav ul li{
+  padding: 20px;
 }
 
-h2, h3{
-  margin-top: 6px;
-  margin-bottom: 6px;
-  font-size: 28px;
-  font-weight: bold;
-  letter-spacing: -1px;
-  color: #313131;
+nav ul li a{
+  color: #000;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-h2{
-  font-size: 28px;
-}
-h3{
+/*LIVROS*/
+.titulo{
+  margin-top: 10vh;
   font-size: 24px;
-}
-h4{
-  margin-bottom: 12px;
-  font-size: 22px;
-  line-height: 40px;
-  color: rgba(#313131, 0.7);
+  text-align: center;
 }
 
-p:not(.author){
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 1.4;
-}
-
-p.author{
-  margin-bottom: 10px;
-  letter-spacing: -1px;
-  font-weight: 400;
-  color: rgba(#313131, 0.5);
-}
-
-/*BOTAO*/
-a.button {
-  margin-bottom: 0;
-  padding: 8px 14px;
-  font-size: 14px;
-  font-weight: 600;
-  border-radius: 3px;
-  background-color: rgba(#313131, 0.5);
-}
-
-/*HEADER*/
-.page-header{
+.container{
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 15px;
   position: relative;
+}
+
+.subtitulo{
+  padding-bottom: 2vh;
+  font-size: 23px;
+  padding-left: 1.8vh;
+}
+
+.livros-container{
+  overflow-x: auto;
+}
+.livros{
+  display: flex;
+  margin: 0 20px;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
+.arrow-esquerda, .arrow-direita{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  font-size: 20px;
+  line-height: 250px;
+  width: 20px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to left, transparent 0%, rgb(143, 139, 139) 200%);
+  opacity: 0.1; 
+  transition: all 600ms ease-in-out;
+}
+.arrow-direita{
+  left: auto;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, transparent 0%, black 200%); 
+}
+.arrow-esquerda:hover,
+.arrow-direita:hover{
+  opacity: 1;
+}
+
+.item{
+  width: 250px;
+  height: 250px;
+  flex-shrink: 0;
+  opacity: 0.6;
+  transition: all 600ms ease-in-out;
+}
+.current-item{
+  opacity: 1;
+}
+
+.img-livros{
+  width: 180px;
+  height: 280px;
+}
+
+.progress{
+  background-color: #888;
+  height: 4px;
+  margin-top: 4px;
+}
+.progress-bar{
+  background-color: #ffa9a9;
+  height: 4px;
+  position: relative;
+  top: -4px;
+}
+.progress-bar .um{
+  width: 60%;
+}
+.progress-bar.dois{
+  width: 47%;
+}
+.progress-bar.tres{
+  width: 20%;
+}
+.progress-bar.quatro{
+  width: 15%;
 }
