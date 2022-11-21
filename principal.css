@@ -11,6 +11,7 @@ nav{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  background-color: #ec9c7c;
 }
 
 nav .logo{
@@ -34,16 +35,20 @@ nav ul li a{
 
 /*LIVROS*/
 .titulo{
-  margin-top: 10vh;
-  font-size: 24px;
+  margin-top: 15vh;
+  font-size: 26px;
   text-align: center;
+}
+#fileira-principal{
+  margin-top: 7vh;
 }
 
 .container{
   margin: 0 auto;
   max-width: 1240px;
-  padding: 15px;
+  padding: 18px;
   position: relative;
+  margin-bottom: 12vh;
 }
 
 .subtitulo{
