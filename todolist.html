@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todolist.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="titulo">
+            <img src="img/logo-todolist.png" alt="">
+            <h1 class="text-center">My<span class="text-primary">Book</span>List</h1>
+        </div>
+        <form id="book-form">
+            <div class="form-grupo">
+                <label for="title">Nome do livro:</label>
+                <input type="text" id="titulo" class="form-control">
+            </div>
+            <div class="form-grupo">
+                <label for="autor">Autor:</label>
+                <input type="text" id="autor" class="form-control">
+            </div>
+            <input type="submit" value="add-book" class="btn" onclick="adicionar()">
+        </form>
+        <div id="lista">
+
+        </div>
+        
+    </div>
+</body>
+</html>
