@@ -8,24 +8,39 @@
     <title>Document</title>
 </head>
 <body>
+    <!--MENU-->
+    <div class="nav">
+        <nav>
+          <div class="logo">
+            <a href="principal.html"><img src="img/logo.png" width="100%"></a>
+          </div>
+          <ul class="links">
+            <li><a href="todolist.html"><h3>ToDoList</h3></a></li>
+            <li><a href="arquivos.html"><h3>Arquivos</h3></a></li>
+            <li><a href="#"><h3>Quem somos</h3></a></li>
+          </ul>      
+        </nav>
+    </div>
+
+    <!---->
     <div class="container">
         <div class="titulo">
-            <img src="img/logo-todolist.png" alt="">
+            <img src="img/logo-todolist.png" class="img-todolist">
             <h1 class="text-center">My<span class="text-primary">Book</span>List</h1>
         </div>
         <form id="book-form">
             <div class="form-grupo">
-                <label for="title">Nome do livro:</label>
+                <label for="title">Nome do livro:</label> <br>
                 <input type="text" id="titulo" class="form-control">
             </div>
             <div class="form-grupo">
-                <label for="autor">Autor:</label>
+                <label for="autor">Autor:</label> <br>
                 <input type="text" id="autor" class="form-control">
             </div>
-            <input type="submit" value="add-book" class="btn" onclick="adicionar()">
+            <input type="submit" value="Adicionar" class="btn" onclick="adicionar()">
         </form>
         <div id="lista">
-
+            
         </div>
         
     </div>

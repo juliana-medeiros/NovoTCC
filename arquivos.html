@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css-arquivos/arquivo.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css-arquivos/swiper-bundle.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <!--MENU-->
+    <div class="nav">
+        <nav>
+          <div class="logo">
+            <a href="principal.html"><img src="img/logo.png" width="100%"></a>
+          </div>
+          <ul class="links">
+            <li><a href="todolist.html"><h3>ToDoList</h3></a></li>
+            <li><a href="arquivos.html"><h3>Arquivos</h3></a></li>
+            <li><a href="#"><h3>Quem somos</h3></a></li>
+          </ul>      
+        </nav>
+      </div>
+
+      <!--CARROSSEL-->
+      <section class="main swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+            <div class="slide swiper-slide">
+                <img src="img/slide1.jpg" alt="" class="image">
+                <div class="image-data">
+                    <span class="text">Slide 1</span>
+                    <h2>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, <br>  riosam eius itaque rem.
+                    </h2>
+                    <a href="#" class="button">About Us</a>
+                </div>
+            </div>
+            <div class="slide swiper-slide">
+              <img src="img/slide2.jpg" alt="" class="image">
+              <div class="image-data">
+                  <span class="text">Slide 1</span>
+                  <h2>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, <br>  riosam eius itaque rem.
+                  </h2>
+                  <a href="#" class="button">About Us</a>
+              </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="img/slide3.jpg" alt="" class="image">
+            <div class="image-data">
+                <span class="text">Slide 1</span>
+                <h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, <br>  riosam eius itaque rem.
+                </h2>
+                <a href="#" class="button">About Us</a>
+            </div>
+        </div>
+        </div>
+
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+      </section>
+
+      <!-- Swiper JS -->
+      <script src="js-arquivos/swiper-bundle.min.js"></script>
+      
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          cssMode: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          mousewheel: true,
+          keyboard: true,
+        });
+      </script>
+</body>
+</html>

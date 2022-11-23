@@ -9,32 +9,26 @@
 </head>
 <body>
     <!--Menu-->
-    <div class="background">
       <div class="nav">
         <nav>
           <div class="logo">
-            <a href=""><img src="img/logo.png" width="100%"></a>
+            <a href="principal.html"><img src="img/logo.png" width="100%"></a>
           </div>
           <ul class="links">
-            <li><a href="#">ToDoList</a></li>
-            <li><a href="#">Importância</a></li>
-            <li><a href="#">Quem somos</a></li>
-          </ul>     
-          <div class="search-box">
-            <input type="text" placeholder="search...." />
-            <a href="##" class="icon">
-              <i class="fas fa-search"></i>
-            </a>
-          </div>  
+            <li><a href="todolist.html"><h3>ToDoList</h3></a></li>
+            <li><a href="arquivos.html"><h3>Arquivos</h3></a></li>
+            <li><a href="#"><h3>Quem somos</h3></a></li>
+          </ul>      
         </nav>
       </div>
-      
-    </div>
    
 
     <!--LIVROS 1-->
     <div class="titulo">
       <h2>Livraria Online</h2>
+    </div>
+    <div class="busca">
+      <form><input type="search" id="pesquisa" placeholder="Search for books" onkeyup="procurarLivros()"></form>
     </div>
     <div class="container">
       <div class="subtitulo" id="fileira-principal">Populares </div>
