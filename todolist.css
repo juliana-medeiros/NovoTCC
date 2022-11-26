@@ -75,3 +75,21 @@ form{
     font-size: 15px;
     background-color: #81acf1;
 }
+
+#lista{
+  margin: 6vh 40vh 0 40vh;
+}
+
+.lista-titulo{
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  font-size: 18px;
+  background-color: #b9b9b9b2;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.lista-livros{
+  background-color: aliceblue;
+}
