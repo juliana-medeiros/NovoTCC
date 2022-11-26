@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="todolist.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
@@ -39,16 +40,51 @@
             </div>
             <input type="submit" value="Adicionar" class="btn" onclick="adicionar()">
         </form>
-        <div id="lista">
-            <ul class="lista-titulo">
-                <li>Livro:</li>
-                <li>Autor:</li>
+        <div class="lista-container">
+            <ul id="lista">
+                
             </ul>
-            <div class="lista-livros">
-
-            </div>
         </div>
         
     </div>
+
+    <script>
+        function adicionar()
+        {
+            const conteudo = document.getElementById('titulo').value;
+            const conteudo2 = document.getElementById('autor').value;
+
+            const novoP = document.createElement('li');
+            novoP.innerHTML = conteudo, conteudo2;
+            const novoBotao = document.createElement('button');
+            const check = document.createElement("input");
+            novoBotao.innerHTML = 'excluir';
+            novoBotao.className = "btn-remove"
+            check.setAttribute("type", "checkbox");
+
+            novoBotao.addEventListener('click', function(){
+                novoP.remove();
+                novoBotao.remove();
+            });
+
+            novoP.appendChild(check);
+            check.addEventListener("change", function() {
+                if (this.checked) {
+                    novoP.style.textDecoration = "line-through"
+                } else {
+                    novoP.style.textDecoration = "none";
+                }
+            });
+
+            novoP.appendChild
+            document.getElementById('lista').appendChild(novoP);
+            document.getElementById('lista').appendChild(novoBotao);
+
+            //Esvaziando o input automaticamente após adicionar a tarefa
+            document.getElementById('titulo').value = "";
+            document.getElementById('autor').value = "";
+            
+        }
+    </script>
 </body>
 </html>

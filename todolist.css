@@ -63,7 +63,7 @@ form{
 }
 
 .form-grupo{
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 .btn{
@@ -76,20 +76,25 @@ form{
     background-color: #81acf1;
 }
 
-#lista{
-  margin: 6vh 40vh 0 40vh;
+div .lista-container{
+  margin: 0 35vh 0 35vh;
+  padding: 55px;
 }
 
-.lista-titulo{
-  display: flex;
-  justify-content: space-evenly;
+#lista{
   list-style-type: none;
   font-size: 18px;
-  background-color: #b9b9b9b2;
-  padding: 10px;
+  background-color: whitesmoke;
+  padding: 25px;
   border-radius: 12px;
+  margin-bottom: auto;
 }
 
-.lista-livros{
-  background-color: aliceblue;
+.btn-remove{
+  color: #000;
+  background-color: #bbd3fa;
+  border-radius: 12px;
+  padding: 6px;
+  font-size: 15px;
+  border: none;
 }
