@@ -16,73 +16,36 @@
             <a href="principal.html"><img src="img/logo.png" width="100%"></a>
           </div>
           <ul class="links">
-            <li><a href="todolist.html"><h3>ToDoList</h3></a></li>
-            <li><a href="arquivos.html"><h3>Arquivos</h3></a></li>
-            <li><a href="#"><h3>Quem somos</h3></a></li>
+            <li><a href="todolist.html"><h4>ToDoList</h4></a></li>
+            <li><a href="arquivos.html"><h4>Arquivos</h4></a></li>
+            <li><a href="#"><h4>Quem somos</h4></a></li>
           </ul>      
         </nav>
     </div>
 
     <!---->
+    
+    <div class="titulo">
+        <img src="img/logo-todolist.png" class="img-todolist">
+        <h1 class="text-center">My<span class="text-primary">Book</span>List</h1>
+    </div>
     <div class="container">
-        <div class="titulo">
-            <img src="img/logo-todolist.png" class="img-todolist">
-            <h1 class="text-center">My<span class="text-primary">Book</span>List</h1>
-        </div>
-        <form id="book-form">
-            <div class="form-grupo">
-                <label for="title">Nome do livro:</label> <br>
-                <input type="text" id="titulo" class="form-control">
-            </div>
-            <div class="form-grupo">
-                <label for="autor">Autor:</label> <br>
-                <input type="text" id="autor" class="form-control">
-            </div>
-            <input type="submit" value="Adicionar" class="btn" onclick="adicionar()">
-        </form>
-        <ul id="lista">
-            <li></li>
+        <p>
+            <label for="new-task">Add Livro</label><input id="new-task" type="text"><button>Add</button>
+        </p>
+          
+        <h3>Vou ler</h3>
+        <ul id="incomplete-tasks">
+            <li><input type="checkbox"><label>Teste</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+            <li class="editMode"><input type="checkbox"><label></label><input type="text" value="nome do livro"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+ 
         </ul>
-        
+        <h3>Já lidos</h3>
+        <ul id="completed-tasks">
+            <li><input type="checkbox" checked><label>Livros já lido</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+        </ul>   
     </div>
 
-    <script>
-        function adicionar()
-        {
-            const conteudo = document.getElementById('titulo').value;
-            const conteudo2 = document.getElementById('autor').value;
-
-            const novoP = document.createElement('li');
-            novoP.innerHTML = conteudo, conteudo2;
-            const novoBotao = document.createElement('button');
-            const check = document.createElement("input");
-            novoBotao.innerHTML = 'excluir';
-            novoBotao.className = "btn-remove"
-            check.setAttribute("type", "checkbox");
-
-            novoBotao.addEventListener('click', function(){
-                novoP.remove();
-                novoBotao.remove();
-            });
-
-            novoP.appendChild(check);
-            check.addEventListener("change", function() {
-                if (this.checked) {
-                    novoP.style.textDecoration = "line-through"
-                } else {
-                    novoP.style.textDecoration = "none";
-                }
-            });
-
-            novoP.appendChild
-            document.getElementById('lista').appendChild(novoP);
-            document.getElementById('lista').appendChild(novoBotao);
-
-            //Esvaziando o input automaticamente após adicionar a tarefa
-            document.getElementById('titulo').value = "";
-            document.getElementById('autor').value = "";
-            
-        }
-    </script>
+    <script type="text/javascript" src="todolist.js"></script>
 </body>
 </html>
