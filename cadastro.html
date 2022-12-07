@@ -21,7 +21,7 @@
                         <h1>Cadastre-se</h1>
                     </div>
                     <div class="botao-login">
-                        <button><a href="login.html">Entrar</a></button>
+                        <button><a href="login.html">Já possui conta?</a></button>
                     </div>
                 </div>
 
@@ -59,12 +59,12 @@
 
                     <div class="gender-grupo">
                         <div class="gender-input">
-                            <input id="female" type="radio" name="gender">
+                            <input id="female" type="radio" name="gender" required>
                             <label for="female">Feminino</label>
                         </div>
 
                         <div class="gender-input">
-                            <input id="male" type="radio" name="gender">
+                            <input id="male" type="radio" name="gender" required>
                             <label for="male">Masculino</label>
                         </div>
 
@@ -75,7 +75,7 @@
                     </div>
                 </div>
                 <div class="continue-botao">
-                    <button name="submit" id="submit"> <a href="#"> Entrar </a></button>
+                    <button name="submit" id="submit"> <a href="login.html" onclick="continuar()"> continuar </a></button>
                 </div>
             </form>
         </div>

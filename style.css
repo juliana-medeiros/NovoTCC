@@ -52,6 +52,11 @@ nav ul li a{
     color: #fff;
 }
 
+.lado-esquerdo a:hover{
+  color: #f56d2f;
+  transition: 0.3s all;
+}
+
 #login, 
 #cadastro{
   border: 2px solid #e6713b;
@@ -60,13 +65,11 @@ nav ul li a{
 }
 
 #login:hover{
-  background-color: #f3956a;
-  color: #fff;
+  color: #f56d2f;
 }
 
 #cadastro:hover{
-  background-color: #f3956a;
-  color: #fff;
+  color: #f56d2f;
 }
 
 /*Colocando o texto para um lado e a imagem para o outro*/
@@ -267,14 +270,14 @@ main .main-img img{
 background-color: #adc3e4b7;
 text-align: center;
 border-radius: 12px;
-margin-bottom: 11vh;
-padding: 20px;
-padding-left: 28vh;
-padding-right: 28vh;
+margin-bottom: 5vh;
+padding: 17px;
+padding-left: 8vh;
+padding-right: 8vh;
 }
 
 .titulo-form h1{
-font-size: 28px;
+  font-size: 28px;
 }
 
 div .caixa{

@@ -16,18 +16,6 @@ form.addEventListener('submit', (e) => {
     e.preventDefault()
 })
 
-function logar() {
-    if(nome.value, username.value, email.value, senha.value, senha2.value == ""){
-
-    }
-    else if (nome.value.length < 5, username.value.length > 5, !emailRegex.test(email.value), senha.value != senha2.value){
-
-    }
-    else{
-        window.location.href = "principal.html"
-    }
-}
-
 function validarNome() {
     if (nome.value == ""){
     }
