@@ -159,7 +159,7 @@ div .gender-inputs{
     color: #000000c0;
 }
 
-.continue-botao input{
+.continue-botao button{
     width: 100%;
     margin-top: 1.5rem;
     border: none;
@@ -169,11 +169,11 @@ div .gender-inputs{
     cursor: pointer;
 }
 
-.continue-botao input:hover {
+.continue-botao button:hover {
     background-color: #FA834B;
 }
 
-.continue-botao input a {
+.continue-botao button a {
     text-decoration: none;
     font-size: 0.93rem;
     font-weight: 500;

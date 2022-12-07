@@ -52,6 +52,23 @@ nav ul li a{
     color: #fff;
 }
 
+#login, 
+#cadastro{
+  border: 2px solid #e6713b;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+#login:hover{
+  background-color: #f3956a;
+  color: #fff;
+}
+
+#cadastro:hover{
+  background-color: #f3956a;
+  color: #fff;
+}
+
 /*Colocando o texto para um lado e a imagem para o outro*/
 main{
     display: flex;
@@ -176,20 +193,21 @@ main .main-img img{
     background-color: #373e42;
     color: white;
     transform: rotateY(180deg);
+    padding-top: 2vh;
   }
 
   /*DICAS*/
   .dicas{
-    padding-left: 23vh;
+    padding-left: 14vh;
     display: flex;
     background: rgba(211, 211, 211, 0.274);
 
-    margin: 12vh 10vh 2vh 10vh;
+    margin: 8vh 22vh 7vh 22vh;
   }
 
   .content-img{
-    padding-bottom: 3vh;
-    margin-top: 1vh;
+    padding-bottom: 2vh;
+    margin-top: 5vh;
   }
 
   .content{
@@ -212,9 +230,9 @@ main .main-img img{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 50px;
-    margin-bottom: 40px;
-    margin-left: 11vh;
-    margin-right: 11vh;
+    margin-bottom:80px;
+    margin-left: 20vh;
+    margin-right: 20vh;
   }
 
   .grupo-cards img{
@@ -311,12 +329,13 @@ font-size: 12px bold;
 
 .input-botao button{
   background-color: #3e3e47f1;
-  width: 18vh;
+  width: 25vh;
   border: none;
   
   padding: 0.62rem;
   border-radius: 5px;
   cursor: pointer;
+  margin-left: 21vh;
 }
 
 .input-botao button:hover {
