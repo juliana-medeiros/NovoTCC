@@ -31,12 +31,29 @@
                             <input type="password" id="senha" placeholder="Digite sua senha" required>
                         </div>
                         <div class="continue-botao">
-                            <button><a href="#">Entrar</a></button>
+                            <button onclick="entrar()"><a>Entrar</a></button>
                         </div>
                     </div>      
                 </form>
             </div>
         </div>
+        <script>
+            document.addEventListener("keypress", function(e){
+            if(e.key === "Enter"){
+                const button = document.querySelector(".button");
+                button.click();
+            }
+            });
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault()
+            })
+
+            function entrar() {
+                window.location.href = "principal.html"
+            }
+            
+        </script>
     </body>
 </body>
 </html>
